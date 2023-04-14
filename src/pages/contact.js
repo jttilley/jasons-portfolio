@@ -1,9 +1,9 @@
 import React from "react"
 import {Container, Row, Col } from "reactstrap";
 import styled from "styled-components";
-import Background from "./background";
-import Footer from "./footer";
-import NavBar from "./nav";
+import Background from "../components/background";
+import Footer from "../components/footer";
+import NavBar from "../components/nav";
 
 const ContactWrapper = styled.div`
   .container {
@@ -35,7 +35,7 @@ const Contact = () => {
         <Container>
           <Row className="card-header">
             <Col lg={4} className="card card-body">
-            <img className="contactpic" alt="Jason Tilley" src="https://github.com/jttilley/react-portfolio/blob/main/images/Family.jpeg?raw=true" />
+            <img className="contactpic" alt="Jason Tilley" src="./images/Family.jpeg" />
             </Col>
             <Col lg={8} className="card card-body">
 

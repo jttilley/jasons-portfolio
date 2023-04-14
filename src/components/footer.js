@@ -42,7 +42,7 @@ const FooterWrapper = styled.div`
 `;
 
 function Footer() {
-  console.log('fab: ', fab);
+  // console.log('fab: ', fab);
   const { faGithub, faLinkedin } = fab;
   return (
     <FooterWrapper>

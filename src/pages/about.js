@@ -1,9 +1,9 @@
 import React from "react"
 import { Container, Row, Col } from "reactstrap";
 import styled from "styled-components";
-import NavBar from "./nav";
-import Footer from "./footer";
-import Background from "./background";
+import NavBar from "../components/nav";
+import Footer from "../components/footer";
+import Background from "../components/background";
 
 const AboutWrapper = styled.div`
   .aboutPic {
@@ -43,7 +43,7 @@ const About = () => {
               </Row>
               <Row>
                 <Col md={12} className="about">
-                  <img className="aboutPic" alt="Jason Tilley" src="https://github.com/jttilley/react-portfolio/blob/main/images/Family.jpeg?raw=true" />
+                  <img className="aboutPic" alt="Jason Tilley" src="./images/Family.jpeg" />
                   <p>
                     I enjoy analyzing and problem solving. I am great with math and logic and love learning new things. I got into coding when I was in middle school and have enjoyed doing it ever since. I have a heart for helping others, am a good listener, and value accuracy, honesty, and truth. I love coding because I'm able to make helpful tools and functions for myself and others and it gives me the ability to innovate unique and useful solutions for people. 
                   </p>

@@ -1,11 +1,12 @@
 import React from "react";
 import { Container, Row, Col } from "reactstrap";
+// import { Grid, Paper, makeStyles, List, ListItem, TextField } from '@material-ui/core';
 import styled from "styled-components";
 import myApps from "../assets/data/portfolio-apps.json";
-import AppCard from "./appCard";
-import NavBar from "./nav";
-import Footer from "./footer";
-import Background from "./background";
+import AppCard from "../components/appCard";
+import NavBar from "../components/nav";
+import Footer from "../components/footer";
+import Background from "../components/background";
 
 const PortfolioWrapper = styled.div`
   .card-holder {
@@ -29,10 +30,10 @@ const Portfolio = () => {
       <Background>
         <NavBar />
         <div className="card-holder">
-        <Container >
-          <Row>
+        <Container  xs="2" >
+          <Row xs="2">
             {myApps.map(app => (
-              <Col key={app.title}>
+              <Col  xs="2" key={app.title}>
                 <AppCard 
                   title={app.title}
                   img={app.img}
