@@ -30,7 +30,6 @@ const Portfolio = () => {
       <Background>
         <NavBar />
         <div className="card-holder">
-        <Container  xs="2" >
           <Row xs="2">
             {myApps.map(app => (
               <Col  xs="2" key={app.title}>
@@ -44,7 +43,6 @@ const Portfolio = () => {
               </Col>
             ))}
           </Row>
-        </Container>
         </div>
         <Footer />
       </Background>

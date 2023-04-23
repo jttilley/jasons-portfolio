@@ -3,49 +3,49 @@
     "title": "Weather Trips",
     "github": "https://github.com/jttilley/Weather-Trips",
     "deployed": "https://jttilley.github.io/Weather-Trips/",
-    "img": "./images/Weather-Trips.png",
+    "img": "/images/Weather-Trips.png",
     "imgDescription": "A mapped route of your trip with weather cards next to it for each stop along the way based on when you will get there according to google travel times and 1hr per stop."
   },{
     "title": "Bill Board Budget",
     "github": "https://github.com/jttilley/BillBoards",
     "deployed": "https://billboards.herokuapp.com/",
-    "img": "./images/BillBoardBudget.png",
+    "img": "/images/BillBoardBudget.png",
     "imgDescription": "Bill Board is a budgeting app with suggested amounts for categories based on your current income."
   },{
     "title": "Brotein",
     "github": "https://github.com/jttilley/Brotein",
     "deployed": "https://brotein.herokuapp.com/",
-    "img": "./images/brotein.jpg?raw=true",
+    "img": "/images/brotein.jpg?raw=true",
     "imgDescription": "Track your workouts and meals, and find recipies based on specific foods or youtube workout videos."
   },{
     "title": "Macro Automation Videos",
     "github": "https://loom.com/share/folder/999bbd5d48144b65b4ce7658225a97ad",
     "deployed": "https://loom.com/share/folder/999bbd5d48144b65b4ce7658225a97ad",
-    "img": "./images/Macro%20Videos.png?raw=true",
+    "img": "/images/Macro%20Videos.png?raw=true",
     "imgDescription": "Videos showing how many macros I've made for Lazer Designs work."
   },{
     "title": "Employee Directory",
     "github": "https://github.com/jttilley/employee-directory",
     "deployed": "https://jttilley.github.io/employee-directory/",
-    "img": "./images/employeesDir.png?raw=true",
+    "img": "/images/employeesDir.png?raw=true",
     "imgDescription": "List of employees info that can be organized by any column and a search bar to trim the list."
   },{
     "title": "Workout Tracker",
     "github": "https://github.com/jttilley/WorkoutTracker",
     "deployed": "https://workout-tracker-37.herokuapp.com/",
-    "img": "./images/Workout_Tracker.png?raw=true",
+    "img": "/images/Workout_Tracker.png?raw=true",
     "imgDescription": "Add your workouts and see Charts and graphs about the workouts."
   },{
     "title": "Work Day Planner",
     "github": "https://github.com/jttilley/WorkDayPlanner",
     "deployed": "https://jttilley.github.io/WorkDayPlanner/index.html",
-    "img": "./images/Work-Day-Planner.png?raw=true",
+    "img": "/images/Work-Day-Planner.png?raw=true",
     "imgDescription": "A work day with scheduled tasks broken up by hour color coded to show what has passed, where we are and what is to come."
   },{
     "title": "Weather Dashboard",
     "github": "https://github.com/jttilley/WeatherDashboard",
     "deployed": "https://jttilley.github.io/WeatherDashboard/index.html",
-    "img": "./images/Weather-Dashboard.png?raw=true",
+    "img": "/images/Weather-Dashboard.png?raw=true",
     "imgDescription": "Weather cards for specified cities with weather icons showing the weather and listed info"
   }
 ]
