@@ -1,4 +1,4 @@
-# Brotein
+# Jason's Portfolio
 
 ## Description
 A React website to display a portfolo of some of my work and tell a bit about me
