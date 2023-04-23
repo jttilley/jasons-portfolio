@@ -43,7 +43,7 @@ const About = () => {
               </Row>
               <Row>
                 <Col md={12} className="about">
-                  <img className="aboutPic" alt="Jason Tilley" src={process.env.PUBLIC_URL + "/images/IMG_4271.jpeg"} />
+                  <img className="aboutPic" alt="Jason Tilley" src={process.env.PUBLIC_URL + "/images/Family.jpeg"} />
                   <p>
                     I enjoy analyzing and problem solving. I am great with math and logic and love learning new things. I got into coding when I was in middle school and have enjoyed doing it ever since. I have a heart for helping others, am a good listener, and value accuracy, honesty, and truth. I love coding because I get to create and innovate helpful tools and solutions for myself and others. 
                   </p>
