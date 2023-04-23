@@ -1,7 +1,7 @@
 import React from "react"
 import { Container, Row, Col } from "reactstrap";
 import styled from "styled-components";
-import NavBar from "../components/nav";
+import MyNavBar from "../components/nav";
 import Footer from "../components/footer";
 import Background from "../components/background";
 
@@ -30,7 +30,7 @@ const About = () => {
   return (
     <AboutWrapper >
       <Background>
-        <NavBar Title="About Me" />
+        <MyNavBar title="About Me" />
         <Container>
           <Row>
           <Col></Col>
@@ -43,12 +43,12 @@ const About = () => {
               </Row>
               <Row>
                 <Col md={12} className="about">
-                  <img className="aboutPic" alt="Jason Tilley" src="./images/Family.jpeg" />
+                  <img className="aboutPic" alt="Jason Tilley" src={process.env.PUBLIC_URL + "/images/Family.jpeg"} />
                   <p>
                     I enjoy analyzing and problem solving. I am great with math and logic and love learning new things. I got into coding when I was in middle school and have enjoyed doing it ever since. I have a heart for helping others, am a good listener, and value accuracy, honesty, and truth. I love coding because I'm able to make helpful tools and functions for myself and others and it gives me the ability to innovate unique and useful solutions for people. 
                   </p>
                   <p>
-                    For the last few years, I have been creating computer improvements for efficiency, error checking, and ease in every day tasks. I've made these improvments in every department for Lazer Designs, where I currently work, as well as for a few other companies. With all the changes and programs I've created, I've saved Lazer Designs 10s of 1000s of dollars in time, man power, and mistakes.
+                    For the last few years, I have been creating computer improvements for efficiency, error checking, and ease in every day tasks. I've made these improvments in every department for Lazer Designs, the small company I currently work at, as well as for a few other companies on the side. With all the creative solutions, improvements, apps, and macros I created, I've saved Lazer Designs over $750,000/yr in time, man power, and mistakes.
                   </p>
                   <p>
                     My creativity is not only in programming. I have also made many movies with my friends since elementary school. Over the years I've refined my skills at making and editing videos. I've even helped edit award winning documentaries and have made many training videos. 
@@ -61,6 +61,7 @@ const About = () => {
                   </p>
                 </Col>
               </Row>
+              <p>To contact me please Email: jttilley007@gmail.com</p>
             </Col>
             <Col></Col>
           </Row>

@@ -1,89 +1,131 @@
-import React from "react";
+import * as React from 'react';
+import PropTypes from 'prop-types';
+import AppBar from '@mui/material/AppBar';
+import Box from '@mui/material/Box';
+import CssBaseline from '@mui/material/CssBaseline';
+import Divider from '@mui/material/Divider';
+import Drawer from '@mui/material/Drawer';
+import IconButton from '@mui/material/IconButton';
+import List from '@mui/material/List';
+import ListItem from '@mui/material/ListItem';
+import ListItemButton from '@mui/material/ListItemButton';
+import ListItemText from '@mui/material/ListItemText';
+import MenuIcon from '@mui/icons-material/Menu';
+import Toolbar from '@mui/material/Toolbar';
+import Typography from '@mui/material/Typography';
+import Button from '@mui/material/Button';
 import { Link } from "react-router-dom";
-import { Nav } from "reactstrap";
-import styled from "styled-components";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { fab } from "@fortawesome/free-brands-svg-icons";
 
-const NavWrapper = styled.div`
-  span {
-    .fab {
-      font-size: 30pt;
-      margin-left: 50px;
-    }
-  }
-  nav {
-    margin-bottom: 20px;
-    flex-direction: row;
-  }
-  .box {
-    color: black;
-    a {
-      color: navy;
-    }
-  }
-  @media screen and (max-width: 780) {
-    #navbarNav {
-      flex-direction: row;
-      text-align: center;
-      justify-items: space-between;
-      align-content: center;
-    }
-    .items {
-        display: flex;
-        flex-direction: row;
-      }
-  }
-`;
+// import AppCard from './AppCard'
 
-const NavBar = ({title}) => {
-  const { faGithub, faLinkedin } = fab;
-  const links = [
-    {
-      link:"/",
-      name:"Portfolio"
-    },{
-      link:"/about",
-      name:"About"
-    },{
-      link:"/contact",
-      name:"Contact"
-    }
+const drawerWidth = 240;
+const navItems = [
+  [
+    "/jasons-portfolio",
+    "Portfolio"
+  ],[
+    "/about",
+    "About"
+  ],[
+    "https://docs.google.com/document/d/1JZmUQ6V4Xdrd1v8K9TQgww6I28AzIHfSSeBME6vDJ1w/edit?usp=sharing",
+    "Resume"
+  ],[
+    "https://github.com/jttilley",
+    "Github"
+  ],[
+    "https://www.linkedin.com/in/jason-t-tilley/",
+    "Linkedin"
   ]
+];
+
+function MyNavBar(props) {
+  const { window, title } = props;
+  const [mobileOpen, setMobileOpen] = React.useState(false);
+
+  const handleDrawerToggle = () => {
+    setMobileOpen((prevState) => !prevState);
+  };
+
+  
+
+  const drawer = (
+    <Box onClick={handleDrawerToggle} sx={{ textAlign: 'center' }}>
+      <Typography variant="h6" sx={{ my: 2 }}>
+        {title}
+      </Typography>
+      <Divider />
+      <List>
+        {navItems.map((item) => (
+          <ListItem key={item[1]} disablePadding>
+            <ListItemButton sx={{ textAlign: 'center' }}>
+              <Link to={item[0]}><ListItemText primary={item[1]} /></Link>
+            </ListItemButton>
+          </ListItem>
+        ))}
+      </List>
+    </Box>
+  );
+
+  const container = window !== undefined ? () => window().document.body : undefined;
 
   return (
-    <NavWrapper>
-      <Nav className="navbar navbar-expand-lg navbar-light bg-light shadow ">
-        <div className="box">
-            <Link className="title" to="/about"><h1>Jason Tilley</h1></Link>
-        </div>
-
-        <div className="ml-auto" id="navbarNav">
-            <ul className="navbar-nav ml-auto items">
-              {links.map(({ name, link }) => (
-                <li className="item" key={name}>
-                  <Link className="nav-link" to={link}>{name}</Link>
-                </li>
-              ))}
-              <li className="icon">
-                <a className="nav-link" href="https://docs.google.com/document/d/1JZmUQ6V4Xdrd1v8K9TQgww6I28AzIHfSSeBME6vDJ1w/edit?usp=sharing">  
-                  Resume
-                </a>
-              </li>
-              <li className="icon">  
-                <a className="nav-link" href="https://www.linkedin.com/in/jason-t-tilley/"> 
-                  <FontAwesomeIcon icon={faLinkedin} size="2x" /> 
-                </a>
-              </li>
-              <li className="icon">
-                <a className="nav-link" href="https://github.com/jttilley">  
-                  <FontAwesomeIcon icon={faGithub} size="2x" />
-                </a>
-              </li>
-            </ul>
-        </div>
-      </Nav>
-    </NavWrapper>
+    <Box sx={{ display: 'flex' }}>
+      <CssBaseline />
+      <AppBar component="nav">
+        <Toolbar>
+          <IconButton
+            color="inherit"
+            aria-label="open drawer"
+            edge="start"
+            onClick={handleDrawerToggle}
+            sx={{ mr: 2, display: { sm: 'none' } }}
+          >
+            <MenuIcon />
+          </IconButton>
+          <Typography
+            variant="h6"
+            component="div"
+            sx={{ flexGrow: 1, display: { xs: 'none', sm: 'block' } }}
+          >
+            {title}
+          </Typography>
+          <Box sx={{ display: { xs: 'none', sm: 'block' } }}>
+            {navItems.map((item) => (
+              <Button href={item[0]} key={item[1]} sx={{ color: '#fff' }}>
+                {item[1]}
+              </Button>
+            ))}
+          </Box>
+        </Toolbar>
+      </AppBar>
+      <Box component="nav">
+        <Drawer
+          container={container}
+          variant="temporary"
+          open={mobileOpen}
+          onClose={handleDrawerToggle}
+          ModalProps={{
+            keepMounted: true, // Better open performance on mobile.
+          }}
+          sx={{
+            display: { xs: 'block', sm: 'none' },
+            '& .MuiDrawer-paper': { boxSizing: 'border-box', width: drawerWidth },
+          }}
+        >
+          {drawer}
+        </Drawer>
+      </Box>
+      
+    </Box>
   );
 }
-export default NavBar;
+
+MyNavBar.propTypes = {
+  /**
+   * Injected by the documentation to work in an iframe.
+   * You won't need it on your project.
+   */
+  window: PropTypes.func,
+};
+
+export default MyNavBar;

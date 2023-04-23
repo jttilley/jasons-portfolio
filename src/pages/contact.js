@@ -3,11 +3,11 @@ import {Container, Row, Col } from "reactstrap";
 import styled from "styled-components";
 import Background from "../components/background";
 import Footer from "../components/footer";
-import NavBar from "../components/nav";
+import MyNavBar from "../components/nav";
 
 const ContactWrapper = styled.div`
   .container {
-    height: 600px;
+    height: 100%;
     margin-top: 30px;
   }
   .info {
@@ -17,7 +17,7 @@ const ContactWrapper = styled.div`
     }
   }
   .contactpic {
-    width: 100%;
+    width: 50%;
     height: auto;
   }
   @media screen and (max-width: 480px) {
@@ -31,11 +31,11 @@ const Contact = () => {
   return (
     <ContactWrapper>
       <Background>
-        <NavBar />
+        <MyNavBar title="Jason Tilley"/>
         <Container>
           <Row className="card-header">
             <Col lg={4} className="card card-body">
-            <img className="contactpic" alt="Jason Tilley" src="./images/Family.jpeg" />
+            <img className="contactpic" alt="Jason Tilley" src={process.env.PUBLIC_URL + "/images/Family.jpeg"} />
             </Col>
             <Col lg={8} className="card card-body">
 

@@ -24,6 +24,7 @@ const FooterWrapper = styled.div`
   @media screen and (max-width: 480px) {
     span {
       margin: 0 20px;
+      padding: 30px 0px
       color: white;
     }
     icon {

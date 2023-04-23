@@ -10,13 +10,13 @@
     "github": "https://github.com/jttilley/BillBoards",
     "deployed": "https://billboards.herokuapp.com/",
     "img": "/images/BillBoardBudget.png",
-    "imgDescription": "Bill Board is a budgeting app with suggested amounts for categories based on your current income."
+    "imgDescription": "Bill Board is a budgeting app with suggested amounts for categories based on your current income. WARNING: This may take 5-10 seconds to Load initially." 
   },{
     "title": "Brotein",
     "github": "https://github.com/jttilley/Brotein",
     "deployed": "https://brotein.herokuapp.com/",
     "img": "/images/brotein.jpg?raw=true",
-    "imgDescription": "Track your workouts and meals, and find recipies based on specific foods or youtube workout videos."
+    "imgDescription": "Track your workouts and meals, and find recipies based on specific foods or youtube workout videos. WARNING: This may take 5-10 seconds to Load initially."
   },{
     "title": "Macro Automation Videos",
     "github": "https://loom.com/share/folder/999bbd5d48144b65b4ce7658225a97ad",
