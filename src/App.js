@@ -3,19 +3,17 @@
 import { BrowserRouter as Router, Route, Switch} from 'react-router-dom';
 import Portfolio from './pages/portfolio';
 import About from './pages/about';
-import Contact from './pages/contact';
+// import Contact from './pages/contact';
 
 function App() {
   return (
     <div className="App">
       <Router>
         <Switch>
-          <Route exact path="/"><Portfolio /></Route>  {/* component={Portfolio} */}
-          <Route exact path="/jasons-portfolio"><Portfolio /></Route>  {/* component={Portfolio} */}
-          <Route path="/about"><About /></Route>  {/* component={About}  /> */}
-          <Route path="/contact"><Contact /></Route>  {/* component={Contact} /> */}
-          <Route path="/jasons-portfolio/about"><About /></Route>  {/* component={About}  /> */}
-          <Route path="/jasons-portfolio/contact"><Contact /></Route>  {/* component={Contact} /> */}
+          <Route exact path="/"><Portfolio /></Route>  
+          <Route exact path="/jasons-portfolio"><Portfolio /></Route> 
+          <Route path="/about"><About /></Route>  
+          <Route path="/jasons-portfolio/about"><About /></Route> 
         </Switch>
       </Router>
     </div>
