@@ -8,14 +8,13 @@ import About from './pages/about';
 function App() {
   return (
     <div className="App">
-      <Router>
+      {/* <Router> */}
         <Switch>
           <Route exact path="/"><Portfolio /></Route>  
           <Route exact path="/jasons-portfolio"><Portfolio /></Route> 
-          <Route path="/about"><About /></Route>  
-          <Route path="/jasons-portfolio/about"><About /></Route> 
+          <Route exact path="/about"><About /></Route>  
         </Switch>
-      </Router>
+      {/* </Router> */}
     </div>
   );
 }

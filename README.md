@@ -12,23 +12,7 @@ Repo link: https://github.com/jttilley/jasons-portfolio
 Jason Tilley
 
 ## Tech Used
-HTTP, CSS, JavaScript, React, react-router-dom, JSX, React-router, @material-ui/core
-
-## Table of Contents
-  * [Example](#example)
-    
-  * [Usage](#usage)
-  
-  * [Questions](#questions)
-    
-
-## Example
-![example](./public/images/Portfolio.png)
-
-
-
-## Usage
-* Open deployed link in the browser.
+HTTP, CSS, JavaScript, React, react-router-dom, JSX, React-router, @material-ui
 
 ## Questions
 If you have any questions you can email me: 

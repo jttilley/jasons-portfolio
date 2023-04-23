@@ -91,9 +91,11 @@ function MyNavBar(props) {
           </Typography>
           <Box sx={{ display: { xs: 'none', sm: 'block' } }}>
             {navItems.map((item) => (
-              <Button href={item[0]} key={item[1]} sx={{ color: '#fff' }}>
-                {item[1]}
-              </Button>
+              <Link to={item[0]}>
+                <Button  key={item[1]} sx={{ color: '#fff' }}>
+                  {item[1]}
+                </Button>
+              </Link>
             ))}
           </Box>
         </Toolbar>
