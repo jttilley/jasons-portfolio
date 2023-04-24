@@ -1,5 +1,5 @@
 import * as React from 'react';
-import PropTypes from 'prop-types';
+// import PropTypes from 'prop-types';
 import AppBar from '@mui/material/AppBar';
 import Box from '@mui/material/Box';
 import CssBaseline from '@mui/material/CssBaseline';
@@ -58,7 +58,10 @@ function MyNavBar(props) {
         {navItems.map((item) => (
           <ListItem key={item[1]} disablePadding>
             <ListItemButton sx={{ textAlign: 'center' }}>
-              <Link to={item[0]}><ListItemText primary={item[1]} /></Link>
+              {item[0].indexOf('http') === -1 ? 
+                <Link to={item[0]} style={{ textDecoration: 'none'}}><ListItemText primary={item[1]} /></Link>
+                : <a href={item[0]} style={{ textDecoration: 'none'}}><ListItemText primary={item[1]} /></a>
+              }
             </ListItemButton>
           </ListItem>
         ))}
@@ -91,11 +94,9 @@ function MyNavBar(props) {
           </Typography>
           <Box sx={{ display: { xs: 'none', sm: 'block' } }}>
             {navItems.map((item) => (
-              <Link to={item[0]}>
-                <Button  key={item[1]} sx={{ color: '#fff' }}>
-                  {item[1]}
-                </Button>
-              </Link>
+              item[0].indexOf('http') === -1 ? 
+              <Link to={item[0]} style={{ textDecoration: 'none'}}><Button  key={item[1]} sx={{ color: '#fff' }}>{item[1]}</Button></Link>
+              : <a href={item[0]} style={{ textDecoration: 'none'}}><Button  key={item[1]} sx={{ color: '#fff' }}>{item[1]}</Button></a>
             ))}
           </Box>
         </Toolbar>
@@ -121,13 +122,4 @@ function MyNavBar(props) {
     </Box>
   );
 }
-
-MyNavBar.propTypes = {
-  /**
-   * Injected by the documentation to work in an iframe.
-   * You won't need it on your project.
-   */
-  window: PropTypes.func,
-};
-
 export default MyNavBar;
