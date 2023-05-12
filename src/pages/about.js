@@ -32,7 +32,6 @@ const AboutWrapper = styled.div`
     -moz-animation: fadeInText 2s;
     -o-animation: fadeInText 2s;
     -ms-animation: fadeInText 2s;
-
   }
   
   @keyframes fadeInText {
