@@ -27,23 +27,70 @@ const AboutWrapper = styled.div`
   }
 
   p {
-    animation-name: enter;
-    animation-duration: 2s;
+    animation: fadeInText 2s;
+    -webkit-animation: fadeInText 2s;
+    -moz-animation: fadeInText 2s;
+    -o-animation: fadeInText 2s;
+    -ms-animation: fadeInText 2s;
+
   }
   
-  @keyframes enter {
+  @keyframes fadeInText {
+    0% { width : 0%; opacity : 0%; }
+    100% { width : 100%; opacity : 100%; }
+  }
+
+  @-moz-keyframes fadeInText {
+    0% { width : 0%; opacity : 0%; }
+    100% { width : 100%; opacity : 100%; }
+  }
+
+  @-webkit-keyframes fadeInText {
+    0% { width : 0%; opacity : 0%; }
+    100% { width : 100%; opacity : 100%; }
+  }
+
+  @-o-keyframes fadeInText {
+    0% { width : 0%; opacity : 0%; }
+    100% { width : 100%; opacity : 100%; }
+  }
+
+  @-ms-keyframes fadeInText {
     0% { width : 0%; opacity : 0%; }
     100% { width : 100%; opacity : 100%; }
   }
 
   img {
-    animation-name: image;
-    animation-duration: 2s;
+    animation: fadeIn 4s;
+    -webkit-animation: fadeIn 4s;
+    -moz-animation: fadeIn 4s;
+    -o-animation: fadeIn 4s;
+    -ms-animation: fadeIn 4s;
   }
   
-  @keyframes image {
-    0% { opacity : 0%; }
-    100% { opacity: 100%; }
+  @keyframes fadeIn {
+    0% { opacity: 0; }
+    100% { opacity: 1; }
+  }
+
+  @-moz-keyframes fadeIn {
+    0% { opacity: 0; }
+    100% { opacity: 1; }
+  }
+
+  @-webkit-keyframes fadeIn {
+    0% { opacity: 0; }
+    100% { opacity: 1; }
+  }
+
+  @-o-keyframes fadeIn {
+    0% { opacity: 0; }
+    100% { opacity: 1; }
+  }
+
+  @-ms-keyframes fadeIn {
+    0% { opacity: 0; }
+    100% { opacity: 1; }
   }
 
   @media screen and (max-width: 480px) {
