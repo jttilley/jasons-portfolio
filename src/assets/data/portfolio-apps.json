@@ -1,48 +1,56 @@
 [
   {
     "title": "Weather Trips",
+    "sub": "HTML, CSS, Javascript, jQuery, Ajax, Google Maps Javascript API, Google Directions API, Open Weather API, Moment.js, Bootstrap",
     "github": "https://github.com/jttilley/Weather-Trips",
     "deployed": "https://jttilley.github.io/Weather-Trips/",
     "img": "/images/Weather-Trips.png",
     "imgDescription": "A mapped route of your trip with weather cards next to it for each stop along the way based on when you will get there according to google travel times and 1hr per stop."
   },{
     "title": "Bill Board Budget",
+    "sub": "HTTP, CSS, JavaScript, Bootstrap, jQuery, ES6, RegEx, Node.js, express, express-handlebars, eslint, mySQL2, passport, sequelize, bcryptjs",
     "github": "https://github.com/jttilley/BillBoards",
     "deployed": "https://billboards.herokuapp.com/",
     "img": "/images/BillBoardBudget.png",
     "imgDescription": "Bill Board is a budgeting app with suggested amounts for categories based on your current income. WARNING: This may take 5-10 seconds to Load initially." 
   },{
     "title": "Brotein",
+    "sub": "HTTP, CSS, JavaScript, React, react-router-dom, router, @material-ui/core, axios, bcryptjs, express, if-env, memorystore, mongojs, mongoose, morgan, passport, path, sequelize, uuid, youTubes rapid api, edamam api",
     "github": "https://github.com/jttilley/Brotein",
     "deployed": "https://brotein.herokuapp.com/",
     "img": "/images/brotein.jpg?raw=true",
     "imgDescription": "Track your workouts and meals, and find recipies based on specific foods or youtube workout videos. WARNING: This may take 5-10 seconds to Load initially."
   },{
     "title": "Macro Automation Videos",
+    "sub": "VBA, Auto Hotkeys",
     "github": "https://loom.com/share/folder/999bbd5d48144b65b4ce7658225a97ad",
     "deployed": "https://loom.com/share/folder/999bbd5d48144b65b4ce7658225a97ad",
     "img": "/images/Macro%20Videos.png?raw=true",
     "imgDescription": "Videos showing how many macros I've made for Lazer Designs work."
   },{
     "title": "Employee Directory",
+    "sub": "HTTP, CSS, JavaScript, Bootstrap, jQuery, Ajax, ES6, Node.js, express, React",
     "github": "https://github.com/jttilley/employee-directory",
     "deployed": "https://jttilley.github.io/employee-directory/",
     "img": "/images/employeesDir.png?raw=true",
     "imgDescription": "List of employees info that can be organized by any column and a search bar to trim the list."
   },{
     "title": "Workout Tracker",
+    "sub": "HTTP, CSS, JavaScript, Bootstrap, jQuery, ES6, Node.js, express, path, Mongoose database",
     "github": "https://github.com/jttilley/WorkoutTracker",
     "deployed": "https://workout-tracker-37.herokuapp.com/",
     "img": "/images/Workout_Tracker.png?raw=true",
     "imgDescription": "Add your workouts and see Charts and graphs about the workouts."
   },{
     "title": "Work Day Planner",
+    "sub": "HTML, CSS, Javascript, Bootstrap, FontAwesome, Moment.js",
     "github": "https://github.com/jttilley/WorkDayPlanner",
     "deployed": "https://jttilley.github.io/WorkDayPlanner/index.html",
     "img": "/images/Work-Day-Planner.png?raw=true",
     "imgDescription": "A work day with scheduled tasks broken up by hour color coded to show what has passed, where we are and what is to come."
   },{
     "title": "Weather Dashboard",
+    "sub": "Javascript, jQuery, Ajax, Open Weather API, moment.js",
     "github": "https://github.com/jttilley/WeatherDashboard",
     "deployed": "https://jttilley.github.io/WeatherDashboard/index.html",
     "img": "/images/Weather-Dashboard.png?raw=true",

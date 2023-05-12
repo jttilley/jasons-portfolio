@@ -25,6 +25,27 @@ const AboutWrapper = styled.div`
   h2 {
     color: white;
   }
+
+  p {
+    animation-name: enter;
+    animation-duration: 2s;
+  }
+  
+  @keyframes enter {
+    0% { width : 0%; opacity : 0%; }
+    100% { width : 100%; opacity : 100%; }
+  }
+
+  img {
+    animation-name: image;
+    animation-duration: 2s;
+  }
+  
+  @keyframes image {
+    0% { opacity : 0%; }
+    100% { opacity: 100%; }
+  }
+
   @media screen and (max-width: 480px) {
     .fullbackground { 
       height: 1800px;

@@ -33,6 +33,7 @@ const Portfolio = () => {
               <Grid item xs={12} sm={6} md={4} lg={3} >
                 <AppCard 
                   title={app.title}
+                  sub={app.sub}
                   img={app.img}
                   github={app.github}
                   deployed={app.deployed}
